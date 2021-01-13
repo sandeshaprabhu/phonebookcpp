@@ -68,12 +68,11 @@ first: cout<<"\t\t\t\tList of operations\n\n";
                   r1.searching(no_of_contacts,&f_name);
                   break;
           case 6: cout<<"exit";
-                  exit(0);
-                  for(int i=0;i<no_of_contacts;i++)
+		  for(int i=0;i<no_of_contacts;i++)
                   {
                       delete contact[i];
                   }
-                  return(0);
+                  exit(0);
          default: cout<<"\n\nWrong choice!!!!->please enter between 1 to 6\n\n";
                   goto first;//return to enter choice
       }
